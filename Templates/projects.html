@@ -4,20 +4,26 @@
 
     <link rel="stylesheet" href="static/css/bootstrap_pagination.css">
     <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/books.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   {% endblock %}
 
 {% block body %}
 
-    <div class = "title_wrapper">
+    <div class = "title__wrapper">
         <div class = 'title'>
             My projects
         </div>
     </div>
 
-    <div class = "main_content_wrapper">
-        <div class = "main_content">
+    <div class = "main-content__wrapper">
+        <div class = "main-content">
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a href = "/dance_with_death">
+                        In this fun little project you have a chance to dance with the Grim Reaper himself!
+                    </a>
+                </div>
+            </div>
             <div class = "main_project_row">
                 <div class = "main_project_link_1">
                     <a href = "https://urbecafebar.herokuapp.com/">
@@ -51,11 +57,11 @@
             </div>
             <div class = "main_project_row">
                 <div class = "main_project_link_1">
-                    <a class = "main_project_link" href = "https://pythonflaskdotabuff.herokuapp.com/">
+                    <a href = "https://pythonflaskdotabuff.herokuapp.com/">
                         Parser for multiplayer games
                     </a>
                 </div>
-                <a href = "https://github.com/hardlanebakura/OnlineParser">Github</a>
+                <a href = "https:/github.com/hardlanebakura/OnlineParser">Github</a>
             </div>
             <div class = "main_project_row">
                 <div class = "main_project_link_1">
@@ -72,4 +78,3 @@
     </div>
 
 {% endblock %}
-

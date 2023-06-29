@@ -1,21 +1,14 @@
-var pages = document.getElementsByClassName("page");
+const pages = document.getElementsByClassName('page');
 
-function getTimeout(ms) {
-
-    return new Promise(resolve => setTimeout(resolve, ms));
-
-}
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function demo() {
-
-    await getTimeout(1040);
-    pages[1].innerText = "";
-    await getTimeout(240)
-    pages[2].innerText = "";
-    await getTimeout(420);
-    pages[3].innerText = "";
-
+  const durations = [1040, 240, 420];
+  
+  for (let i = 1; i <= durations.length; i++) {
+    await wait(durations[i - 1]);
+    pages[i].innerText = '';
+  }
 }
 
 demo();
-

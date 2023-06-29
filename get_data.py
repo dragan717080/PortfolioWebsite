@@ -27,6 +27,7 @@ def open_json_file(file_name):
         json_data = json.load(file)
     return json_data
 
-data = open_json_file('data/books.json')['books']
+data = open_json_file('data/quotes.json')['quotes']
+
 
 

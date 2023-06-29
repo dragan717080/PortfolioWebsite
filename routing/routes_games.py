@@ -1,19 +1,18 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify, Blueprint, abort
-import json
+from flask import render_template, Blueprint
+from db_models import Movie
 
 games_pages = Blueprint('games', __name__,
-    template_folder='Templates', static_folder='static', url_prefix="/games")
+    template_folder='Templates', static_folder='static', url_prefix='/games')
 
-@games_pages.route("/")
+@games_pages.route('/')
 def games():
-    return render_template("games/games.html")
+    return render_template('games/games.html')
 
-@games_pages.route("/hangman")
+@games_pages.route('/hangman')
 def hangman():
-    data_file = open("data/quiz_questions.json")
-    quiz = json.load(data_file)["questions"]
-    return render_template("games/hangman.html", quiz = quiz)
+    quiz = Movie.find_all(Movie)
+    return render_template('games/hangman.html', quiz=quiz)
 
-@games_pages.route("/memory")
+@games_pages.route('/memory')
 def memory():
-    return render_template("games/memory.html")
+    return render_template('games/memory.html')

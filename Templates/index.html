@@ -2,46 +2,45 @@
 
   {% block head %}
 
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/index.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel = 'stylesheet' href = "{{ url_for('static', filename = '/css/index.css') }}">
 
   {% endblock %}
 
 {% block body %}
 
-        <div class = "title_wrapper">
+        <div class = 'title__wrapper'>
             <div class = 'title'>
                 Hello! Enjoy yourself!
             </div>
         </div>
 
-        <div class = "main_content_wrapper">
-            <div class = "main_content">
-                <div class="book">
+        <div class = 'main-content__wrapper'>
+            <div class = 'main-content'>
+                <div class='book'>
 
-                  <span class="page turn"></span>
-                  <span class="page turn">Hi</span>
-                  <span class="page turn">My name is Dragan</span>
-                  <span class="page turn">I am Software Engineer</span>
-                  <span class="page turn">Thank you for visit!</span>
-                  <span class="page turn">Hello</span>
-                  <span class="page turn">Thank you for visit!</span>
-                  <span class="cover"></span>
-                  <span class="page"></span>
-                  <span class="cover turn"></span>
+                  <span class='page turn'></span>
+                  <span class='page turn'>Hi</span>
+                  <span class='page turn'>My name is Dragan</span>
+                  <span class='page turn'>I am Software Engineer</span>
+                  <span class='page turn'>Thank you for visit!</span>
+                  <span class='page turn'>Hello</span>
+                  <span class='page turn'>Thank you for visit!</span>
+                  <span class='cover'></span>
+                  <span class='page'></span>
+                  <span class='cover turn'></span>
                 </div>
 
-                <div class = "selfview">
+                <div class = 'selfview'>
                     I am a Full Stack Software Engineer.<br>
                     I like reading, watching movies and writing.<br>
                     I enjoy travelling and meeting new people.
                 </div>
 
-                <div class = "quote">
-                    <div class = "quote_random">
+                <div class = 'quote'>
+                    <div class = 'quote_random'>
                         {{ quote.quote }}
                     </div>
-                    <div class = "quote_maker">
+                    <div class = 'quote_author'>
                         {{ quote.author }}
                     </div>
                 </div>
@@ -51,4 +50,3 @@
 <script src = "{{ url_for('static', filename = 'js/index.js') }}"></script>
 
 {% endblock %}
-

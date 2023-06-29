@@ -3,8 +3,6 @@
   {% block head %}
 
     <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/hangman.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 
     <script>
 
@@ -16,7 +14,7 @@
 
 {% block body %}
 
-        <div class = "title_wrapper">
+        <div class = "title__wrapper">
             <div class = 'title'>
                 Live or die, make your choice
             </div>
@@ -29,8 +27,8 @@
             </div>
         </div>
 
-        <div class = "main_content_wrapper">
-            <div class = "main_content">
+        <div class = "main-content__wrapper">
+            <div class = "main-content">
 
                 <div id = "hangman">
 
@@ -57,7 +55,7 @@
                         </div>
 
                         <div class = "quiz_content">
-                            <div class = "q_title_wrapper">
+                            <div class = "q_title__wrapper">
                                 <div id = "quiz_title">
 
                                 </div>
@@ -96,4 +94,3 @@
 <script src = "{{ url_for('static', filename = 'js/hangman.js') }}"></script>
 
 {% endblock %}
-

@@ -1,4 +1,4 @@
-.book_img {
+.book__img {
 
     height:104px;
     width:54px;
@@ -12,7 +12,7 @@
 
 }
 
-.book_overlay {
+.book__overlay {
 
     position: absolute;
     bottom: 100%;
@@ -27,20 +27,20 @@
 
 }
 
-.book:hover .book_overlay {
+.book:hover .book__overlay {
 
     height: 100%;
     bottom: 0;
 
 }
 
-.book_info {
+.book__info {
 
     display:flex;
 
 }
 
-.book_description {
+.book__description {
 
     color: white;
     font-size: 12px;
@@ -54,7 +54,7 @@
 
 }
 
-.book_title, .book_author {
+.book__title, .book__author {
 
     width:148px;
     margin-inline:14px;
@@ -83,5 +83,4 @@ nav {
     margin-right:22%;
 
 }
-
 

@@ -147,7 +147,7 @@
     50% { z-index: 999 }
     100% {  transform: rotateY(30deg);
     z-index: 999;}
-    
+
 }
 
 @keyframes bookOpen15deg {

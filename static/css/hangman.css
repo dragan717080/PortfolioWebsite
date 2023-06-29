@@ -1,120 +1,81 @@
-.q_title_wrapper {
-
-    margin-top:0;
-    display:flex;
-    justify-content:center;
-
-}
-
 #quiz_title {
-
-    width:fit-content;
-    padding:4px;
-    background-color:#000;
-    color:#fff;
-    text-transform:uppercase;
-    transform:translate(-1px, -17px);
-
-}
-
-#hangman {
-
-
-
+  width: fit-content;
+  padding: 4px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  transform: translate(-1px, -17px);
 }
 
 .quiz_question_row {
-
-    margin:4% 0;
-    display:flex;
-
+  margin: 4% 0;
+  display: flex;
 }
 
 #quiz_question {
-
-    max-width:180px;
-    text-transform:uppercase;
-    text-align:center;
-
+  max-width: 180px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .letter_element {
-
-    height:22px;
-    width:22px;
-    margin-inline:1px;
-    padding:3px;
-    text-transform:uppercase;
-    text-align:center;
-    background-color:lightgray;
-    border:1px solid gray;
-    border-radius:4px;
-
+  height: 22px;
+  width: 22px;
+  margin-inline: 1px;
+  padding: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 4px;
 }
 
 .quiz_content {
-
-    padding:0 16px 19px 16px;
-    border: 2px solid gray;
-    border-radius: 10px;
-
+  padding: 0 16px 19px 16px;
+  border: 2px solid gray;
+  border-radius: 10px;
 }
 
 #quiz_question_wrapper {
-
-    display:flex;
-    justify-content:center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .quiz_letters {
-
-    margin-bottom:7%;
-
+  margin-bottom: 7%;
 }
 
 .letter_row {
-
-    margin-bottom:4px;
-
+  margin-bottom: 4px;
 }
 
 .letter_button {
-
-    width:26px;
-    background-color:#000;
-    color:#fff;
-    border-radius:4px;
-
+  width: 26px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
 }
 
 .tested {
-
-    background-color:lightgray;
-    cursor:none;
-    border:none;
-
+  background-color: lightgray;
+  cursor: none;
+  border: none;
 }
 
 #glitch {
-
     overflow:hidden;
     position:relative;
-
 }
 
 #glitch_img {
-
     height:480px;
     width:480px;
     position:relative;
     z-index:1;
     display:none;
-
 }
 
 #glitch_layers {
-
     z-index:2;
     top:0;
     right:0;
@@ -122,11 +83,9 @@
     left:0;
     display:none;
     position:absolute;
-
 }
 
 .glitch_layer {
-
     top:0;
     right:0;
     bottom:0;
@@ -136,28 +95,21 @@
     background-position:0 0;
     background-size:contain;
     position:absolute;
-
 }
 
 .glitch_layer:nth-child(1) {
-
     transform:translateX(-4%);
     animation:glitch-1 2s infinite linear alternate;
-
 }
 
 .glitch_layer:nth-child(2) {
-
     transform:translate(3%, 3%);
     animation:glitch-2 1.1s infinite linear alternate;
-
 }
 
 .glitch_layer:nth-child(3) {
-
     transform:translateX(5%);
     animation:glitch-3 1s infinite linear;
-
 }
 
 @keyframes glitch-1 {
@@ -297,54 +249,45 @@
 }
 
 #many_lives {
-
     font-size:24px;
     margin-bottom:4%;
     display:flex;
     justify-content:center;
-
 }
 
 .attempt {
-
     padding:10px;
-
 }
 
 #stage {
-
     text-align:center;
-
 }
 
 .glitch_text {
-  font-family: 'Arial';
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 0.75;
-  display:none;
-  transform: translateY(19px);
-
+    font-family: 'Arial';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 0.75;
+    display:none;
+    transform: translateY(19px);
 }
 
 .glitch_text span {
-
-  margin:4px 0;
-  display: block;
-
+    margin:4px 0;
+    display: block;
 }
 
 span:not(.light) {
-  opacity: 0;
-  animation: flashText 1.2s ease-out alternate infinite;
+    opacity: 0;
+    animation: flashText 1.2s ease-out alternate infinite;
 }
 
 span.light {
-  color:crimson;
-  position: relative;
-  display: inline-block;
-  }
+    color:crimson;
+    position: relative;
+    display: inline-block;
+}
   span.light:before {
     position: absolute;
     left: 0;
@@ -371,23 +314,18 @@ span.light {
 
 
 #glitch_text_1 {
-
     margin-top:4%;
     color:crimson;
     text-align:center;
     position:relative;
     display:none;
-
 }
 
 #glitch_text_content {
-
     padding-top:40%;
-
 }
 
 #glitch_text_2 {
-
     height:400px;
     width:400px;
     margin: -3% 0 0 3%;
@@ -396,11 +334,8 @@ span.light {
     position:relative;
     background-image:url("../images/stock-vector-billy-doll-saw-vector-illustration-doll-halloween-costume-character-sticker-1180672708_bicycle.jpg");
     display:none;
-
 }
 
 .hidden_text {
-
     opacity:0;
-
 }

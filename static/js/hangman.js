@@ -27,8 +27,8 @@ for (let i = 0; i < letterButtons.length; i++) {
 function newQuestion() {
   randomQuiz = quiz[Math.floor(Math.random() * quiz.length)];
   randomIndex = quiz.indexOf(randomQuiz);
-  randomGenre = randomQuiz['genre'];
-  randomQuiz = randomQuiz['original_title'];
+  randomGenre = 'movies';
+  randomQuiz = randomQuiz['title'];
   const quizTitle = document.getElementById('quiz_title');
   quizTitle.innerText = randomGenre;
   const quizQuestion = document.getElementById('quiz_question');
@@ -87,14 +87,17 @@ async function allIsNowComplete() {
   hangmanGrid.style.display = 'none';
   currentStage++;
   allCompletedElement.style.display = 'block';
-  allCompletedText.innerText = 'Congratulations!';
-  await wait(1360);
-  allCompletedText.innerText = 'Most people are so ungrateful to be alive...';
-  await wait(1360);
-  allCompletedText.innerText = 'But not you...';
-  await wait(1360);
-  allCompletedText.innerText = 'Not anymore...';
-  await wait(1200);
+  const inscripMessages = [
+    'Congratulations!',
+    'Most people are so ungrateful to be alive...',
+    'But not you...',
+    'Not anymore...'
+  ];
+  for (let i = 0; i < inscripMessages.length; i++) {
+    allCompletedText.innerText = inscripMessages[i];
+    const toWait = i < (inscripMessages.length - 1) ? 1360 : 1200;
+    await wait(toWait);
+  }
 }
 
 async function questionFailed() {

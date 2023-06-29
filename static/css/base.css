@@ -1,10 +1,8 @@
 body {
-
     margin:0;
     padding:0;
     box-sizing:border-box;
     overflow-x:hidden;
-
 }
 
 @font-face {
@@ -13,7 +11,6 @@ body {
          url('../fonts/cafeole-roquette-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -22,7 +19,6 @@ body {
          url('..fonts/alice_in_wonderland_3-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -35,19 +31,15 @@ body {
 }
 
 .gothic_main {
-
-    height: 400px;
+    height: 25rem;
     margin:-10px;
-    font-family:"cafeole_roquetteregular", sans-serif;
-    background-image:url("../images/gothic_forest.jpg");
+    font-family:'cafeole_roquetteregular', sans-serif;
+    background-image:url('../images/gothic_forest.jpg');
     background-size: contain;
-
 }
 
 .gothic_main_trip {
-
     padding:9vw;
-
 }
 
 .gothic_main_trip h1 {
@@ -244,18 +236,15 @@ body {
 }
 
 .dance_with_death_scheduling {
-
     margin-left:22px;
     font-family: 'Fira Mono', monospace;
     font-size:24px;
     letter-spacing:-1px;
     animation: schedule_dance 1s linear infinite;
-
 }
+
 #submitting_dance {
-
     display:none;
-
 }
 
 @keyframes schedule_dance {
@@ -347,7 +336,7 @@ div:after{
 
 }
 
-.gothic_main_menu {
+.gothic-menu {
 
     display:flex;
     justify-content:center;
@@ -355,10 +344,10 @@ div:after{
 
 }
 
-.gothic_menu_item a {
+.gothic-menu__item a {
 
     margin-inline:14px;
-    font-family: "Fira Mono", monospace;
+    font-family: 'Fira Mono', monospace;
     font-size:23px;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
@@ -368,7 +357,7 @@ div:after{
 
 }
 
-.gothic_menu_item a::before {
+.gothic-menu__item a::before {
 
   content: attr(data-text);
   position: absolute;
@@ -381,7 +370,7 @@ div:after{
 
 }
 
-.gothic_menu_item a:hover::before {
+.gothic-menu__item a:hover::before {
 
   width: 100%;
 
@@ -492,26 +481,22 @@ div:after{
 }
 
 
-.title_wrapper {
-
+.title__wrapper {
     margin-top:4%;
     display:flex;
     justify-content:center;
     font-family: 'Fira Mono', monospace;
-
 }
 
 .title {
-
     margin-left: 22px;
     font-family: 'Fira Mono', monospace;
     font-size: 24px;
     letter-spacing: -1px;
     animation: schedule_dance 1s linear infinite;
-
 }
 
-.main_content_wrapper {
+.main-content__wrapper {
 
     margin-top:4%;
     display:flex;
@@ -519,27 +504,35 @@ div:after{
 
 }
 
-.main_content {
-
+.main-content {
     font-family: 'Fira Mono', monospace;
+}
 
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-h {
+  display: flex;
+  justify-content: center;
+}
+
+.row-v {
+  display: flex;
+  align-items: center;
 }
 
 body::-webkit-scrollbar {
-
     width: 0.7em;
-
 }
 
-    body::-webkit-scrollbar-track {
-
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-
 }
 
-    body::-webkit-scrollbar-thumb {
-
+body::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, lightgray, darkgray);
     outline: 1px solid slategrey;
 
-}
