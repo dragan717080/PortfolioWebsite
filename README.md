@@ -1,5 +1,3 @@
-This project is my portfolio website.
-Thank you for showing interest in me.
+This project is my portfolio website, built with Flask and SQLAlchemy.
 
-App hosted on Heroku - <a href = "https://pythondraganportfolioweb.herokuapp.com/projects">https://pythondraganportfolioweb.herokuapp.com</a>
 
