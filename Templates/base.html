@@ -1,55 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href="{{ url_for('static', filename='/css/base.css') }}">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link rel='logoicon.png' sizes='76x76' href='{{ url_for('static', filename='/images/logoicon.png') }}' />
+    <link rel='shortcut icon' href="{{ url_for('static', filename='/images/logoicon.png') }}" type='image/x-icon' />
+    <link href='https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap' rel='stylesheet'>
 
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/base.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="logoicon.png" sizes="76x76" href="{{ url_for('static', filename = '/images/logoicon.png') }}" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename = '/images/logoicon.png') }}" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    {% block head %}
 
-  {% block head %}
-
-  {% endblock %}
+    {% endblock %}
 
 </head>
 
 <body>
 
-    <div class = "gothic_main">
-        <div class = "gothic_main_trip">
+    <div class='gothic_main'>
+        <div class='gothic_main_trip'>
             <h1>Dragan</h1>
             <h1>Dragan</h1>
             <h1>Dragan</h1>
         </div>
-        <div class = "gothic_main_menu">
-            <div class = "gothic_menu_item">
-                <a href = "/" data-text = "HOME">HOME</a>
+        <div class='gothic_main_menu'>
+            <div class='gothic_menu_item'>
+                <a href='/' data-text='HOME'>HOME</a>
             </div>
-            <div class = "gothic_menu_item" data-text = "GAMES">
-                <a href = "/games" data-text = "GAMES">GAMES</a>
+            <div class='gothic_menu_item' data-text='GAMES'>
+                <a href='/games' data-text='GAMES'>GAMES</a>
             </div>
-            <div class = "gothic_menu_item" data-text = "PROJECTS">
-                <a href = "/projects" data-text = "PROJECTS">PROJECTS</a>
+            <div class='gothic_menu_item' data-text='PROJECTS'>
+                <a href='/projects' data-text='PROJECTS'>PROJECTS</a>
             </div>
-            <div class = "gothic_menu_item" data-text = "BLOG">
-                <a href = "/blog" data-text = "BLOG">BLOG</a>
+            <div class='gothic_menu_item' data-text='BLOG'>
+                <a href='/blog' data-text='BLOG'>BLOG</a>
             </div>
-            <div class = "gothic_menu_item" data-text = "BLOG">
-                <a href = "/books" data-text = "BOOKS">BOOKS</a>
+            <div class='gothic_menu_item' data-text='BLOG'>
+                <a href='/books' data-text='BOOKS'>BOOKS</a>
             </div>
         </div>
     </div>
 
-{% block body %}
-
-
-
-{% endblock %}
-
-  <script src = "{{ url_for('static', filename = '/js/base.js') }}"></script>
+    {% block body %}
+    
+    {% endblock %}
 
 </body>
 </html>
