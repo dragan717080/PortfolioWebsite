@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+  {% block head %}
+
+    <link rel="stylesheet" href="static/css/bootstrap_pagination.css">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/books.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  {% endblock %}
+
+{% block body %}
+
+    <div class = "title_wrapper">
+        <div class = 'title'>
+            My projects
+        </div>
+    </div>
+
+    <div class = "main_content_wrapper">
+        <div class = "main_content">
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a href = "https://urbecafebar.herokuapp.com/">
+                        Cafe bar website
+                    </a>
+                </div>
+                <a class = "main_project_link" href = "https://github.com/hardlanebakura/UrbeCafeBar">Github</a>
+            </div>
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a class = "main_project_link" href = "https://github.com/hardlanebakura/PythonFlaskBooksMovies2">
+                        A list of books and movies based on the New York Times API
+                    </a>
+                </div>
+            </div>
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a href = "https://draganfrenchfootballleague.herokuapp.com/">
+                        Detailed statistics for the Uber 1 French Ligue with tables, results and schedules
+                    </a>
+                </div>
+                <a class = "main_project_link" href = "https://github.com/hardlanebakura/PythonFlaskFrenchLeague">Github</a>
+            </div>
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a href = "https://pythonflaskvirtualpiano.herokuapp.com/">
+                        Online Virtual Piano
+                    </a>
+                </div>
+                <a class = "main_project_link"  href = "https://github.com/hardlanebakura/PythonFlaskVirtualPiano">Github</a>
+            </div>
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a class = "main_project_link" href = "https://pythonflaskdotabuff.herokuapp.com/">
+                        Parser for multiplayer games
+                    </a>
+                </div>
+                <a href = "https://github.com/hardlanebakura/OnlineParser">Github</a>
+            </div>
+            <div class = "main_project_row">
+                <div class = "main_project_link_1">
+                    <a href = "/">
+                        Link to this website :)
+                    </a>
+                </div>
+                <a class = "main_project_link" href = "https://github.com/hardlanebakura/PortfolioWebsite">Github</a>
+            </div>
+            <div class = "main_project_row">
+                (Heroku puts apps to sleep after 30 minutes of inactivity, so some pages might take 15 seconds to load, sorry!)
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
