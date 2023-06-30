@@ -1,25 +1,25 @@
-.blog_intro_content {
+.blog-intro__content {
     max-width:42%;
     margin-bottom:4%;
     text-align:center;
 }
 
-.blog_intro_image {
+.blog-intro__image {
     display:flex;
     justify-content:center;
 }
 
-.blog_intro_img {
+.blog-intro__img {
     height:440px;
     width:42%;
 }
 
-.blog_content_wrapper {
+.blog-content__wrapper {
     display:flex;
     justify-content:center;
 }
 
-.blog_content {
+.blog-content {
     max-width:42%;
 }
 
@@ -28,18 +28,18 @@
     text-align:center;
 }
 
-.blog_subtitle {
+.blog-subtitle {
     color:darkgray;
     font-size:19px;
     font-weight:bold;
 }
 
-.blog_content_img {
+.blog-content__img {
     height:360px;
     width:100%;
 }
 
-.blog_more {
+.blog-more {
     margin-bottom:7%;
 }
 

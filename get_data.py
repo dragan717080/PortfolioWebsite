@@ -28,6 +28,3 @@ def open_json_file(file_name):
     return json_data
 
 data = open_json_file('data/quotes.json')['quotes']
-
-
-

@@ -2,7 +2,6 @@ from flask import Flask
 from config import *
 from db_models import *
 
-
 def create_app():
     app = Flask(__name__, template_folder = 'Templates')
 

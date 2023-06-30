@@ -261,19 +261,15 @@ body {
 
 .dance_with_death_scheduling:before,
 .dance_with_death_scheduling:after {
-
   content: attr(title);
   position: absolute;
   left: 0;
-
 }
 
 .dance_with_death_scheduling:before {
-
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-
 }
 
 @keyframes glitchTop{
@@ -289,9 +285,9 @@ body {
 }
 
 div:after{
-  animation: glitchBotom 1.5s linear infinite;
-  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
 @keyframes glitchBotom{
@@ -307,45 +303,34 @@ div:after{
 }
 
 #month_select {
-
     margin:11px 0 41px 0;
-
 }
 
 #date_selection {
-
     margin-left:22px;
-
 }
 
 #dance_clock {
-
     margin-left:22px;
     font-family: 'Creepster', cursive;
     font-size:5em;
     text-shadow:1px 1px 5px crimson;
     position:relative;
-
 }
 
 #dance_clock_wrapper {
-
     overflow:hidden;
     display:flex;
     justify-content:center;
-
 }
 
 .gothic-menu {
-
     display:flex;
     justify-content:center;
     align-items:center;
-
 }
 
 .gothic-menu__item a {
-
     margin-inline:14px;
     font-family: 'Fira Mono', monospace;
     font-size:23px;
@@ -354,11 +339,9 @@ div:after{
     color:gray;
     text-decoration:none;
     position:relative;
-
 }
 
 .gothic-menu__item a::before {
-
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -367,17 +350,13 @@ div:after{
   overflow: hidden;
   color: #8B0000;
   transition: all 0.15s cubic-bezier(0.29, 0.73, 0.74, 1.02);
-
 }
 
 .gothic-menu__item a:hover::before {
-
   width: 100%;
-
 }
 
 .blood_drip {
-
     height:0.6em;
     width:0.6em;
     top:67%;
@@ -386,98 +365,69 @@ div:after{
     box-shadow:1px 1px 1px crimson;
     animation:blooddropschedule 3s infinite both;
     position:absolute;
-
 }
 
 .blood_drip:nth-child(1) {
-
     left:18%;
-
 }
 
 .blood_drip:nth-child(2) {
-
     height:0.4em;
     width:0.4em;
     left:39%;
     animation-delay:-.5s;
-
-
 }
 
 .blood_drip:nth-child(3) {
-
     left:55%;
     animation-delay:-1.5s;
-
 }
 
 .blood_drip:nth-child(4) {
-
     left:calc(28% + 1px);
     animation-delay:-.10s;
-
 }
 
 .blood_drip:nth-child(5) {
-
     left:36%;
     animation-delay:-1s;
-
 }
 
 .blood_drip:nth-child(6) {
-
     left:55%;
     animation-delay:-1.5s;
-
 }
 
 .blood_drip:nth-child(7) {
-
     left:34%;
     animation-delay:-.5s;
-
 }
 
 @keyframes blooddropschedule {
 
     0% {
-
         transform: translateY(0) scaleX(.85) rotate(45deg);
         animation-timing-function: ease-out;
-
     }
 
     60% {
-
         transform: translateY(10%) scaleX(.85) rotate(45deg);
         animation-timing-function: ease-in;
-
     }
 
     80%, 100% {
-
         transform: translateY(10vh) scaleX(.85) rotate(45deg);
-
     }
-
 }
 
 @media only screen and (max-width: 1500px) {
-
     .gothic_main_trip {
-
         padding:12vw;
-
     }
 
     #dance_clock {
-
         font-size:4em;
-
     }
-
 }
 
 
@@ -497,11 +447,9 @@ div:after{
 }
 
 .main-content__wrapper {
-
     margin-top:4%;
     display:flex;
     justify-content:center;
-
 }
 
 .main-content {
@@ -535,4 +483,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, lightgray, darkgray);
     outline: 1px solid slategrey;
-
+}

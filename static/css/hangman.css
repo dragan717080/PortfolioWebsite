@@ -288,7 +288,7 @@ span.light {
     position: relative;
     display: inline-block;
 }
-  span.light:before {
+span.light:before {
     position: absolute;
     left: 0;
     top: -10%;
@@ -298,7 +298,7 @@ span.light {
     filter: blur(10px);
     content: "";
     opacity: 0;
-  }
+}
 
 @keyframes flash{
   to {

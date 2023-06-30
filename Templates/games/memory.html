@@ -1,41 +1,28 @@
 {% extends 'base.html' %}
 
-  {% block head %}
-
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = '/css/memory.css') }}">
-
-  {% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/memory.css') }}">
+{% endblock %}
 
 {% block body %}
+    <div class="title__wrapper">
+        <div class='title'>Memory game</div>
+    </div>
 
-        <div class = "title__wrapper">
-            <div class = 'title'>
-                Memory game
+    <div class="main-content__wrapper">
+        <div class="main-content">
+            <div class="grid">
+                {% for i in range(4) %}
+                    <div class="grid_row">
+                        {% for j in range(4) %}
+                            <div class="grid_element"></div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
             </div>
+            <div id="new_game"></div>
         </div>
+    </div>
 
-        <div class = "main-content__wrapper">
-            <div class = "main-content">
-
-                <div class = "grid">
-                    {% for i in range(4) %}
-                        <div class = "grid_row">
-                            {% for j in range (4) %}
-                                <div class = "grid_element">
-
-                                </div>
-                            {% endfor %}
-                        </div>
-                    {% endfor %}
-                </div>
-
-                <div id = "new_game">
-
-                </div>
-
-            </div>
-        </div>
-
-<script src = "{{ url_for('static', filename = 'js/memory.js') }}"></script>
-
+    <script src="{{ url_for('static', filename='js/memory.js') }}"></script>
 {% endblock %}
